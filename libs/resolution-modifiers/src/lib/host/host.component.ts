@@ -6,16 +6,16 @@ import { FlowerService } from '../services/flower.service';
   templateUrl: './host.component.html',
   styleUrls: ['./host.component.css'],
   //  provide the service
-  providers: [{ provide: FlowerService, useValue: { emoji: '🌷' } }]
+  providers: [{provide: FlowerService, useValue: {emoji: '🌷 HOST 🌷'}}]
 })
 export class HostComponent {
   // use @Host() in the constructor when injecting the service
   constructor(
-    @Host() @Optional() public flower?: FlowerService,
-    @SkipSelf() @Optional() public flowerskip?: FlowerService,
-    @SkipSelf() @Host() @Optional() public flowerskipHost?: FlowerService,
-
-    ) { }
+    @Optional() @Host() public flower?: FlowerService,
+    @Optional() @SkipSelf() public flowerskip?: FlowerService,
+    @Optional() @Host() @SkipSelf()  public flowerskipHost?: FlowerService,
+  ) {
+  }
 
 }
 

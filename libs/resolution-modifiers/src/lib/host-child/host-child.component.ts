@@ -8,8 +8,8 @@ import { FlowerService } from '../services/flower.service';
 })
 export class HostChildComponent {
   constructor(
-    public flower: FlowerService,
-    @Host() @Optional() public flowerHost: FlowerService
+    @Optional() public flower: FlowerService,
+    @Optional() @Host() public flowerHost: FlowerService
   ) {
   }
 }

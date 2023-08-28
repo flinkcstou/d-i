@@ -6,7 +6,7 @@ import { FlowerService } from '../services/flower.service';
   selector: 'app-host-parent',
   templateUrl: './host-parent.component.html',
   styleUrls: ['./host-parent.component.css'],
-  providers: [{ provide: FlowerService, useValue: { emoji: 'PARENT' } }]
+  providers: [{ provide: FlowerService, useValue: { emoji: '🌺 PARENT 🌺' } }]
 
 })
 export class HostParentComponent {
