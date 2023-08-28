@@ -1,19 +1,26 @@
-import { Component, OnInit, Host, SkipSelf, Optional } from '@angular/core';
-import { FlowerService } from '../flower.service';
-import { AnimalService } from '../animal.service';
+import { Component } from '@angular/core';
+import { FlowerService } from '../services/flower.service';
+import { AnimalService } from '../services/animal.service';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
   // provide services
-  providers: [{ provide: FlowerService, useValue: { emoji: '🌻' } }],
-  viewProviders: [{ provide: AnimalService, useValue: { emoji: '🐶' } }]
+  providers: [
+    {provide: FlowerService, useValue: {emoji: '🌻 child 🌻'}},
+    {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
+  ],
+  // viewProviders: [
+  //   {provide: FlowerService, useValue: {emoji: '🌻 child 🌻'}},
+  //   {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
+  // ]
 })
 
 export class ChildComponent {
   // inject service
-  constructor( public flower: FlowerService, public animal: AnimalService) { }
+  constructor(public flower: FlowerService, public animal: AnimalService) {
+  }
 
   // viewProviders ensures that only the view gets to see this.
   // With the AnimalService in the viewProviders, the

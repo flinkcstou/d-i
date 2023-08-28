@@ -3,15 +3,12 @@ import { FlowerService } from '../services/flower.service';
 import { AnimalService } from '../services/animal.service';
 
 @Component({
-  selector: 'app-inspector',
-  templateUrl: './inspector.component.html',
-  styleUrls: ['./inspector.component.css'],
-  viewProviders: [
-    {provide: AnimalService, useValue: {emoji: '🐶 inspector 🐶'}}
-    // { provide: FlowerService, useValue: { emoji: '🌻 inspector 🌻' } }
-  ],
+  selector: 'd-i-child-inspector',
+  templateUrl: './child-inspector.component.html',
+  styleUrls: ['./child-inspector.component.scss'],
 })
-export class InspectorComponent {
+export class ChildInspectorComponent {
+
   constructor(
     public flower: FlowerService,
     public animal: AnimalService,
@@ -20,4 +17,6 @@ export class InspectorComponent {
   ) {
 
   }
+
+
 }
