@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {},
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "incremental": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "typeRoots": ["node_modules/@types"]
   },
   "exclude": ["node_modules", "tmp"]
 }
