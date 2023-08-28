@@ -1,0 +1,10 @@
+- Resolution - разрешения
+- consumer - потребитель
+- consuming - потребляющий
+- provider - поставщик
+- providing - предоставление
+- inject- вводить
+- injecting - инъекция
+- Providing dependency - предоставление зависимости
+- dependency provider - поставщик зависимостей
+- dependency consumer - потребитель зависимостей
