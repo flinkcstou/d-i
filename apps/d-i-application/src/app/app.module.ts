@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { HierarchicalDIModule } from '@d-i/hierarchical-d-i';
+import { ResolutionModifiersModule } from '@d-i/resolution-modifiers';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -12,8 +12,9 @@ import { HierarchicalDIModule } from '@d-i/hierarchical-d-i';
     BrowserModule,
     RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
     // ProvidersViewprovidersModule,
-    HierarchicalDIModule,
+    // HierarchicalDIModule,
     // DIInAngularModule,
+    ResolutionModifiersModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

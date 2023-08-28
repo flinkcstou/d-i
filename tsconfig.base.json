@@ -19,7 +19,8 @@
       "@d-i/hierarchical-d-i": ["libs/hierarchical-d-i/src/index.ts"],
       "@d-i/providers-viewproviders": [
         "libs/providers-viewproviders/src/index.ts"
-      ]
+      ],
+      "@d-i/resolution-modifiers": ["libs/resolution-modifiers/src/index.ts"]
     },
     "strictNullChecks": false,
     "strictFunctionTypes": false,
