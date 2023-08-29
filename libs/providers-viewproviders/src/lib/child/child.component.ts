@@ -11,10 +11,10 @@ import { AnimalService } from '../services/animal.service';
     {provide: FlowerService, useValue: {emoji: '🌻 child 🌻'}},
     {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
   ],
-  // viewProviders: [
-  //   {provide: FlowerService, useValue: {emoji: '🌻 child 🌻'}},
-  //   {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
-  // ]
+  viewProviders: [
+    {provide: FlowerService, useValue: {emoji: '🌻 child 🌻'}},
+    {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
+  ]
 })
 
 export class ChildComponent {

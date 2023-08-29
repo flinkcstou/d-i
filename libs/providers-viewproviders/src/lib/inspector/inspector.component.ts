@@ -6,10 +6,12 @@ import { AnimalService } from '../services/animal.service';
   selector: 'app-inspector',
   templateUrl: './inspector.component.html',
   styleUrls: ['./inspector.component.css'],
-  viewProviders: [
-    {provide: AnimalService, useValue: {emoji: '🐶 inspector 🐶'}}
-    // { provide: FlowerService, useValue: { emoji: '🌻 inspector 🌻' } }
+  providers: [
+    {provide: FlowerService, useValue: {emoji: '🌻 inspector 🌻'}}
   ],
+  viewProviders: [
+    {provide: AnimalService, useValue: {emoji: '🐶 child 🐶'}}
+  ]
 })
 export class InspectorComponent {
   constructor(
