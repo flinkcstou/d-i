@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { HeroTaxReturn } from './hero';
-import { HeroTaxReturnService } from './hero-tax-return.service';
+import { HeroTaxReturnService } from './services/hero-tax-return.service';
 
 @Component({
   selector: 'app-hero-tax-return',

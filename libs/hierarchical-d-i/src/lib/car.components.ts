@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import {
   CarService, CarService2, CarService3,
   EngineService, EngineService2, TiresService
-} from './car.services';
+} from './services/car.services';
 
 ////////// CCarComponent ////////////
 @Component({

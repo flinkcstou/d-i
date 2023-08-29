@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Observable, Observer } from 'rxjs';
 
-import { Hero, HeroTaxReturn } from './hero';
+import { Hero, HeroTaxReturn } from '../hero';
 
 @Injectable({
   providedIn: 'root'

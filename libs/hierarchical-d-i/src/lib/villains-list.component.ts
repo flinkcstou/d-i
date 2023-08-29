@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Villain, VillainsService } from './villains.service';
+import { Villain, VillainsService } from './services/villains.service';
 
 @Component({
   selector: 'app-villains-list',
