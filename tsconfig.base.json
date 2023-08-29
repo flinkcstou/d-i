@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@d-i/custom-d-i": ["libs/custom-d-i/src/index.ts"],
+      "@d-i/d-i-in-action": ["libs/d-i-in-action/src/index.ts"],
       "@d-i/d-i-in-angular": ["libs/d-i-in-angular/src/index.ts"],
       "@d-i/hierarchical-d-i": ["libs/hierarchical-d-i/src/index.ts"],
       "@d-i/providers-viewproviders": [
