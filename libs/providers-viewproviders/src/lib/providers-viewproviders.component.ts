@@ -13,12 +13,12 @@ export class ProvidersViewprovidersComponent {
 }
 
 // When using @Host() together with @SkipSelf() in
-// child.component.ts for the AnimalService, add the
+// child-2.component.ts for the AnimalService, add the
 // following viewProviders array to the @Component metadata:
 
 // viewProviders: [{ provide: AnimalService, useValue: { emoji: '🦔' } }]
 
-// So, the entire ChildComponent @Component() decorator and its
+// So, the entire Child2Component @Component() decorator and its
 // metadata should be as follows:
 
 // @Component({
