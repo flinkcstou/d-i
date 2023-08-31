@@ -16,11 +16,9 @@ export class BookPaperBackComponent extends AbstractBookComponent  implements On
 
   constructor() {
     super();
-    console.error('BookPaperBackComponent');
   }
 
   ngOnInit(): void {
-    console.error('BookPaperBackComponent ngOnInit');
   }
 
 

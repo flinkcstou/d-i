@@ -12,12 +12,9 @@ export class BookPaperParentComponent implements OnInit {
 
 
   constructor() {
-    console.error('BookPaperParentComponent');
-
   }
 
   ngOnInit(): void {
-    console.error('BookPaperParentComponent ngOnInit');
   }
 
   loaded(event: { component: AbstractBookComponent }) {

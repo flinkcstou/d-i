@@ -12,7 +12,6 @@ export class BookLoaderDirective {
     private bookLoadedParent: BookLoaderParentDirective,
     private sdf: AbstractBookComponent,
   ) {
-    console.error('BookLoaderDirective');
     this.bookLoadedParent.loaded.emit({component: this.sdf});
 
   }
