@@ -18,7 +18,7 @@ import { Child2Module } from '../child-2/child-2.module';
   ],
   providers: [CurrentService,
     {
-      provide: A_SERVICE, useValue: 'AAAAA',
+      provide: A_SERVICE, useValue: 'CURRENT_A_SERVICE',
     }
   ]
 })

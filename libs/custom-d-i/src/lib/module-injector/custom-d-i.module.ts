@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CustomDIComponent } from './custom-d-i/custom-d-i.component';
 import { CustomDIService } from './custom-d-i/custom-d-i.service';
 import { GrandModule } from './grand/grand.module';
+import { MatSortModule } from '../sort/sort.module';
 /*
 * завтра повторить пример с ngIf ViewChild
 * повторить пример с input
@@ -19,6 +20,7 @@ import { GrandModule } from './grand/grand.module';
   imports: [
     CommonModule,
     GrandModule,
+    MatSortModule
   ],
   declarations: [CustomDIComponent],
   exports: [CustomDIComponent],
