@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { CustomDIModule } from '@d-i/custom-d-i';
+import { BookPaperParentModule, CustomDIModule } from '@d-i/custom-d-i';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -14,6 +14,7 @@ import { CustomDIModule } from '@d-i/custom-d-i';
     CustomDIModule,
     CustomDIModule.forRoot(),
     CustomDIModule.forChild(),
+    BookPaperParentModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,
