@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AbstractBookComponent } from '../services/abstract-book.component';
 
 @Component({
@@ -6,10 +6,19 @@ import { AbstractBookComponent } from '../services/abstract-book.component';
   templateUrl: './book-paper-parent.component.html',
   styleUrls: ['./book-paper-parent.component.scss'],
 })
-export class BookPaperParentComponent {
+export class BookPaperParentComponent implements OnInit {
 
   show = true;
 
+
+  constructor() {
+    console.error('BookPaperParentComponent');
+
+  }
+
+  ngOnInit(): void {
+    console.error('BookPaperParentComponent ngOnInit');
+  }
 
   loaded(event: { component: AbstractBookComponent }) {
     console.error(event);

@@ -1,4 +1,6 @@
-<p>book-paper-parent works!</p>
-
-<d-i-book-paper-back *ngIf="show" bookLoader (loaded)="loaded($event)"></d-i-book-paper-back>
-<d-i-book-paper-back *ngIf="!show"></d-i-book-paper-back>
+<ng-container bookLoaderParent (loaded)="loaded($event)">
+  <button (click)="show=!show">switch</button>
+  <p>book-paper-parent works!</p>
+  <d-i-book-paper-back *ngIf="show" bookLoader>First</d-i-book-paper-back>
+  <d-i-book-paper-back *ngIf="!show" bookLoader>Second</d-i-book-paper-back>
+</ng-container>

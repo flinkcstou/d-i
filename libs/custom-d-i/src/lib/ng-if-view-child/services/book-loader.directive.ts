@@ -1,23 +1,19 @@
-import { Directive, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
-import { BookPaperParentComponent } from '../book-paper-parent/book-paper-parent.component';
+import { Directive, ElementRef } from '@angular/core';
 import { AbstractBookComponent } from './abstract-book.component';
+import { BookLoaderParentDirective } from './book-loader-parent.directive';
 
 @Directive({
   selector: '[bookLoader]'
 })
-export class BookLoaderDirective implements OnInit {
-
-
-  @Output() loaded = new EventEmitter<any>();
+export class BookLoaderDirective {
 
   constructor(
     private element: ElementRef,
+    private bookLoadedParent: BookLoaderParentDirective,
     private sdf: AbstractBookComponent,
-    private sdfP: BookPaperParentComponent,
   ) {
-  }
+    console.error('BookLoaderDirective');
+    this.bookLoadedParent.loaded.emit({component: this.sdf});
 
-  ngOnInit() {
-    this.loaded.emit({component: this.sdf});
   }
 }

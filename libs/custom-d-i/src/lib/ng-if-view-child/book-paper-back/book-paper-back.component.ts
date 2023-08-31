@@ -1,4 +1,4 @@
-import { Component, forwardRef } from '@angular/core';
+import { Component, forwardRef, OnInit } from '@angular/core';
 import { AbstractBookComponent } from '../services/abstract-book.component';
 
 @Component({
@@ -12,6 +12,16 @@ import { AbstractBookComponent } from '../services/abstract-book.component';
     }
   ]
 })
-export class BookPaperBackComponent extends AbstractBookComponent {
+export class BookPaperBackComponent extends AbstractBookComponent  implements OnInit{
+
+  constructor() {
+    super();
+    console.error('BookPaperBackComponent');
+  }
+
+  ngOnInit(): void {
+    console.error('BookPaperBackComponent ngOnInit');
+  }
+
 
 }
