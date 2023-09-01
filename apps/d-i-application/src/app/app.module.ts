@@ -4,7 +4,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { BookPaperParentModule, CustomDIModule } from '@d-i/custom-d-i';
+import { BookPaperParentModule, CustomDIModule, SelectModule, TodoSelectModule } from '@d-i/custom-d-i';
+import {
+  BookPaperBackModule
+} from '../../../../libs/custom-d-i/src/lib/ng-if-view-child/book-paper-back/book-paper-back.module';
+import {
+  BookPaperGrandModule
+} from '../../../../libs/custom-d-i/src/lib/ng-if-view-child/book-paper-grand/book-paper-grand.module';
+import {
+  BookPaperParentContentModule
+} from '../../../../libs/custom-d-i/src/lib/ng-if-view-child/book-paper-parent-content/book-paper-parent-content.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -15,6 +24,11 @@ import { BookPaperParentModule, CustomDIModule } from '@d-i/custom-d-i';
     CustomDIModule.forRoot(),
     CustomDIModule.forChild(),
     BookPaperParentModule,
+    SelectModule,
+    TodoSelectModule,
+    BookPaperBackModule,
+    BookPaperGrandModule,
+    BookPaperParentContentModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,

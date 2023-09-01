@@ -3,7 +3,26 @@
 <!--<providers-viewproviders></providers-viewproviders>-->
 <!--<hierarchical-d-i></hierarchical-d-i>-->
 <!--<d-i-in-action></d-i-in-action>-->
-<d-i-custom-d-i></d-i-custom-d-i>
-<!--<d-i-book-paper-parent></d-i-book-paper-parent>-->
+<!--<d-i-custom-d-i></d-i-custom-d-i>-->
+<!--<d-i-select></d-i-select>-->
+<!--<d-i-todo-select></d-i-todo-select>-->
+<!--<d-i-book-paper-parent>-->
+
+<!--</d-i-book-paper-parent>-->
+<d-i-book-paper-grand>
+  <d-i-book-paper-parent-content>
+    <!--    <d-i-book-paper-back></d-i-book-paper-back>-->
+    <ng-template #template>
+      <d-i-book-paper-back bookLoader></d-i-book-paper-back>
+    </ng-template>
+  </d-i-book-paper-parent-content>
+</d-i-book-paper-grand>
+<d-i-book-paper-grand>
+  <d-i-book-paper-parent>
+    <d-i-book-paper-back></d-i-book-paper-back>
+  </d-i-book-paper-parent>
+</d-i-book-paper-grand>
 
 <router-outlet></router-outlet>
+
+

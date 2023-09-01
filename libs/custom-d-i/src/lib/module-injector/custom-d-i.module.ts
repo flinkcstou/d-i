@@ -5,9 +5,9 @@ import { CustomDIService } from './custom-d-i/custom-d-i.service';
 import { GrandModule } from './grand/grand.module';
 import { MatSortModule } from '../sort/sort.module';
 /*
-* завтра повторить пример с ngIf ViewChild
+* завтра повторить пример с ngIf ViewChild DONE
 * повторить пример с input
-* повторить пример с matSort
+* повторить пример с matSort DONE
 * повторить пример с dynamic module
 * посмотреть как работает router в разных lazy router
 * */

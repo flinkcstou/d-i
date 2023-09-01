@@ -12,9 +12,12 @@ import { BookLoaderParentDirective } from '../services/book-loader-parent.direct
     BookLoaderParentDirective
   ],
 
-  imports: [CommonModule, BookPaperBackModule],
+  imports: [CommonModule,
+    BookPaperBackModule],
   exports: [
-    BookPaperParentComponent
+    BookPaperParentComponent,
+    BookLoaderDirective,
+    BookLoaderParentDirective
   ]
 })
 export class BookPaperParentModule {

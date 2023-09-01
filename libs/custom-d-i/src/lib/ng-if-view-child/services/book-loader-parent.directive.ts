@@ -1,14 +1,17 @@
-import { Directive, EventEmitter, Output } from '@angular/core';
+import { Directive, EventEmitter, Injector, Output } from '@angular/core';
 
 @Directive({
-  selector: '[bookLoaderParent]'
+  selector: '[bookLoaderParent]',
+  exportAs: 'bookLoaderParent'
 })
 export class BookLoaderParentDirective {
 
 
   @Output() loaded = new EventEmitter<any>();
 
-  constructor() {
+  sdf = 'sdf';
+
+  constructor(public injector: Injector) {
   }
 
 }

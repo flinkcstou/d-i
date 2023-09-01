@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injector, OnInit, Optional, ViewContainerRef } from '@angular/core';
 import { AbstractBookComponent } from '../services/abstract-book.component';
+import { BookPaperGrandComponent } from '../book-paper-grand/book-paper-grand.component';
 
 @Component({
   selector: 'd-i-book-paper-parent',
@@ -10,15 +11,17 @@ export class BookPaperParentComponent implements OnInit {
 
   show = true;
 
-
-  constructor() {
+  constructor(private vcr: ViewContainerRef,
+              public injector: Injector,
+              @Optional() public bookGrand: BookPaperGrandComponent,
+  ) {
   }
 
   ngOnInit(): void {
   }
-
+  
   loaded(event: { component: AbstractBookComponent }) {
-    console.error(event);
+    console.error('loaded:', event);
 
   }
 }

@@ -1,5 +1,6 @@
-import { Component, forwardRef, OnInit } from '@angular/core';
+import { Component, forwardRef, OnInit, Optional } from '@angular/core';
 import { AbstractBookComponent } from '../services/abstract-book.component';
+import { BookPaperGrandComponent } from '../book-paper-grand/book-paper-grand.component';
 
 @Component({
   selector: 'd-i-book-paper-back',
@@ -12,10 +13,13 @@ import { AbstractBookComponent } from '../services/abstract-book.component';
     }
   ]
 })
-export class BookPaperBackComponent extends AbstractBookComponent  implements OnInit{
+export class BookPaperBackComponent extends AbstractBookComponent implements OnInit {
 
-  constructor() {
+  constructor(@Optional() private asdfGrand: BookPaperGrandComponent,
+  ) {
     super();
+
+    console.error(asdfGrand);
   }
 
   ngOnInit(): void {

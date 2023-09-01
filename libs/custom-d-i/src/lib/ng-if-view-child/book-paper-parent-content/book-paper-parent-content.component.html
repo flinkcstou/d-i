@@ -1,0 +1,10 @@
+<ng-container bookLoaderParent #bookLoaderParentDirective="bookLoaderParent" (loaded)="loaded($event)">
+  <p>book-paper-parent-content works!</p>
+  <ng-content></ng-content>
+  <ng-container #container
+                [ngTemplateOutlet]="contentRef"
+                [ngTemplateOutletInjector]="bookLoaderParentDirective.injector">
+  </ng-container>
+
+
+</ng-container>

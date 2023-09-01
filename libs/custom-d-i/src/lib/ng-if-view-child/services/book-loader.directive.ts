@@ -10,9 +10,9 @@ export class BookLoaderDirective {
   constructor(
     private element: ElementRef,
     private bookLoadedParent: BookLoaderParentDirective,
-    private sdf: AbstractBookComponent,
+    private abstractBookComponent: AbstractBookComponent,
   ) {
-    this.bookLoadedParent.loaded.emit({component: this.sdf});
+    this.bookLoadedParent.loaded.emit({component: this.abstractBookComponent});
 
   }
 }
