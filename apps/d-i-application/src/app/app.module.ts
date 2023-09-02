@@ -14,6 +14,12 @@ import {
 import {
   BookPaperParentContentModule
 } from '../../../../libs/custom-d-i/src/lib/ng-if-view-child/book-paper-parent-content/book-paper-parent-content.module';
+import {
+  AbstractFactoryPatternModule
+} from '../../../../libs/custom-d-i/src/lib/abstact-factory-pattern/abstract-factory-pattern/abstract-factory-pattern.module';
+import {
+  DIForwardRefModule
+} from '../../../../libs/custom-d-i/src/lib/d-i-forward-ref/d-i-forward-ref/d-i-forward-ref.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -29,6 +35,8 @@ import {
     BookPaperBackModule,
     BookPaperGrandModule,
     BookPaperParentContentModule,
+    AbstractFactoryPatternModule,
+    DIForwardRefModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,
