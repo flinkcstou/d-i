@@ -1,6 +1,5 @@
-import { Component, Input, Optional } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SelectConfigService, setSelectConfigService } from '../services/select-config.service';
-import { SelectConfigDirective } from '../services/select-config.directive';
 
 @Component({
   selector: 'd-i-select',
@@ -9,8 +8,7 @@ import { SelectConfigDirective } from '../services/select-config.directive';
   providers: [{
     provide: SelectConfigService,
     useFactory: () => {
-      console.error('SelectConfigService useFactory');
-      return setSelectConfigService({size: 'md'});
+      return setSelectConfigService({size: 'md', from: 'selectComponent'});
     }
   }]
 })
@@ -21,10 +19,12 @@ export class SelectComponent {
   @Input() placement: SelectConfigService['placement'];
 
   constructor(
-    @Optional() private selectConfigd: SelectConfigDirective,
-    private selectConfigService: SelectConfigService) {
-    console.error(selectConfigd);
-    console.error('SelectComponent constructor');
+    // @Optional() private selectConfigd: SelectConfigDirective,
+    private selectConfigService: SelectConfigService,
+    // private selectConfigDirective: SelectConfigDirective,
+  ) {
+    // console.error(selectConfigd);
+    console.error('SelectComponent from: ', this.selectConfigService.from);
     this.size = this.selectConfigService.size;
     this.placement = this.selectConfigService.placement;
   }

@@ -57,7 +57,7 @@ const componentListC = [
     InMemoryWebApiModule.forRoot(HeroData)
     // DIInActionRoutingModule TODO: add routes
   ],
-  exports: [DIInActionComponent],
+  exports: [DIInActionComponent, HeroContactComponent],
   declarations: [
     declarations,
     componentListA,

@@ -9,12 +9,16 @@ export class SelectConfigService {
 
   placement: 'top' | 'bottom' | 'right' | 'left' = 'top';
 
+  from = 'root';
+
 
 }
 
 export function setSelectConfigService(selectConfgiService: Partial<SelectConfigService>) {
-  return {
+
+  const asd = {
     ...new SelectConfigService(),
     ...selectConfgiService
   };
+  return asd;
 }

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { BookPaperParentModule, CustomDIModule, SelectModule, TodoSelectModule } from '@d-i/custom-d-i';
 import {
@@ -20,12 +18,13 @@ import {
 import {
   DIForwardRefModule
 } from '../../../../libs/custom-d-i/src/lib/d-i-forward-ref/d-i-forward-ref/d-i-forward-ref.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, {initialNavigation: 'enabledBlocking'}),
+    AppRoutingModule,
     CustomDIModule,
     CustomDIModule.forRoot(),
     CustomDIModule.forChild(),

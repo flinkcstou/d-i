@@ -1,4 +1,4 @@
-import { Directive, forwardRef } from '@angular/core';
+import { Directive } from '@angular/core';
 import { DIRECTIVE } from './injection-token';
 
 @Directive(
@@ -7,7 +7,7 @@ import { DIRECTIVE } from './injection-token';
     providers: [
       {
         provide: DIRECTIVE,
-        useExisting: forwardRef(() => ForwardRefDirectiveDirective)
+        useExisting: ForwardRefDirectiveDirective
       }
     ]
   }
@@ -17,7 +17,9 @@ export class ForwardRefDirectiveDirective {
 
   constructor(
     // @Optional() @Inject(SECOND) private second: any,
+    // @Inject(DIRECTIVE_SECOND) @Optional() @Host() public directive: any
   ) {
+    // console.error(directive);
     // console.error(second);
   }
 }

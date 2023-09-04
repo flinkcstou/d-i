@@ -6,13 +6,21 @@ import { SelectConfigService, setSelectConfigService } from '../services/select-
   templateUrl: './todo-select.component.html',
   styleUrls: ['./todo-select.component.scss'],
   providers: [
-    // {
-    //   provide: SelectConfigService,
-    //   useFactory: () => setSelectConfigService({
-    //     size: 'lg'
-    //   })
-    // }
+    {
+      provide: SelectConfigService,
+      useFactory: () => setSelectConfigService({
+        size: 'lg',
+        from: 'todoComponent'
+      })
+    }
   ]
 })
 export class TodoSelectComponent {
+
+
+  constructor(
+    private selectConfigService: SelectConfigService,
+  ) {
+    console.error('TodoSelectComponent from: ', this.selectConfigService.from);
+  }
 }
