@@ -19,6 +19,9 @@ import {
   DIForwardRefModule
 } from '../../../../libs/custom-d-i/src/lib/d-i-forward-ref/d-i-forward-ref/d-i-forward-ref.module';
 import { AppRoutingModule } from './app-routing.module';
+import {
+  ComponentSelectorModule
+} from '../../../../libs/custom-d-i/src/lib/component-selector/component-selector.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -36,6 +39,7 @@ import { AppRoutingModule } from './app-routing.module';
     BookPaperParentContentModule,
     AbstractFactoryPatternModule,
     DIForwardRefModule,
+    ComponentSelectorModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,
