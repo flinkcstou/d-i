@@ -8,7 +8,7 @@
 - написать dependencyInjector abstract-factory-pattern DONE
 - check angular component selector how its work with ng-content and inner template/ check angular material
   table https://stackoverflow.com/questions/46671235/remove-host-component-tag-from-html-in-angular-4 DONE
-- ответить на issues https://github.com/angular/angular/issues/42649
+- ответить на issues https://github.com/angular/angular/issues/42649 DONE
 - завтра написать конспект по dependencyInjector
 - завтра дать задачу Арману и Мырзабеку
 - расписать завтра план что я хочу сделать
