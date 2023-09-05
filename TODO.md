@@ -9,9 +9,3 @@
 - check angular component selector how its work with ng-content and inner template/ check angular material
   table https://stackoverflow.com/questions/46671235/remove-host-component-tag-from-html-in-angular-4 DONE
 - ответить на issues https://github.com/angular/angular/issues/42649 DONE
-- завтра написать конспект по dependencyInjector
-- завтра дать задачу Арману и Мырзабеку
-- расписать завтра план что я хочу сделать
-- Изучить дальше angular module но это потом
-- также нужно расписать план что нужно сделать для перехода на новую архитектуру и новый проект
-- создать проект где я буду описывать документацию
