@@ -1,4 +1,4 @@
-import { Component, ContentChild, Injector, TemplateRef } from '@angular/core';
+import { Component, ContentChild, inject, Injector, TemplateRef } from '@angular/core';
 
 
 @Component({

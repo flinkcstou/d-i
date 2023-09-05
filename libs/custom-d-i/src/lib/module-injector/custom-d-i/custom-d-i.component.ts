@@ -8,6 +8,7 @@ import { ChildService } from '../child/child.service';
   selector: 'd-i-custom-d-i',
   templateUrl: './custom-d-i.component.html',
   styleUrls: ['./custom-d-i.component.scss'],
+  providers: []
 })
 export class CustomDIComponent {
 

@@ -3,8 +3,14 @@
 - consuming - потребляющий
 - provider - поставщик
 - providing - предоставление
-- inject- вводить
-- injecting - инъекция
+- inject- вводить, внедрить
+- injecting - инъекция, внедрения
 - Providing dependency - предоставление зависимости
 - dependency provider - поставщик зависимостей
 - dependency consumer - потребитель зависимостей
+- Creating an injectable service - Создания внедряемых сервиса
+- Injecting service - Внедрения сервиса
+- Configure - настроить
+- Configuring dependency providers - настройка поставщиков зависимостей
+- Resolution modifiers - модификаторы разрешения
+

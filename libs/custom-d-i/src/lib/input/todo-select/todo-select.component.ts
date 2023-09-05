@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { SelectConfigService, setSelectConfigService } from '../services/select-config.service';
 
 @Component({
@@ -20,6 +20,7 @@ export class TodoSelectComponent {
 
   constructor(
     private selectConfigService: SelectConfigService,
+    private injector: Injector,
   ) {
     console.error('TodoSelectComponent from: ', this.selectConfigService.from);
   }
