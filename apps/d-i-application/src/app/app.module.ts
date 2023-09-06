@@ -7,6 +7,7 @@ import { RootContentModule } from '../../../../libs/custom-d-i/src/lib/issues/ro
 import { TodoSelectModule } from '@d-i/custom-d-i';
 import { ProvidersViewprovidersModule } from '@d-i/providers-viewproviders';
 import { HierarchicalDIModule } from '@d-i/hierarchical-d-i';
+import { DIInActionModule } from '@d-i/d-i-in-action';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -29,6 +30,7 @@ import { HierarchicalDIModule } from '@d-i/hierarchical-d-i';
     TodoSelectModule,
     ProvidersViewprovidersModule,
     HierarchicalDIModule,
+    DIInActionModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,

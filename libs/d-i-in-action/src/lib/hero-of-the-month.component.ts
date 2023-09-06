@@ -9,32 +9,39 @@ import { Hero } from './hero';
 import { HeroService } from './services/hero.service';
 import { LoggerService } from './logger.service';
 import { MinimalLogger } from './services/minimal-logger.service';
-import { RUNNERS_UP,
-         runnersUpFactory } from './runners-up';
+import {
+  RUNNERS_UP,
+  runnersUpFactory
+} from './runners-up';
 
 const someHero = new Hero(42, 'Magma', 'Had a great month!', '555-555-5555');
+
+const LOGGER = new InjectionToken('LOGGER');
 
 @Component({
   selector: 'app-hero-of-the-month',
   templateUrl: './hero-of-the-month.component.html',
   providers: [
-    { provide: Hero,          useValue:    someHero },
-    { provide: TITLE,         useValue:   'Hero of the Month' },
-    { provide: HeroService,   useClass:    HeroService },
-    { provide: LoggerService, useClass:    DateLoggerService },
-    { provide: MinimalLogger, useExisting: LoggerService },
-    { provide: RUNNERS_UP,    useFactory:  runnersUpFactory(2), deps: [Hero, HeroService] }
+    {provide: Hero, useValue: someHero},
+    {provide: TITLE, useValue: 'Hero of the Month'},
+    {provide: HeroService, useClass: HeroService},
+    {provide: LoggerService, useClass: DateLoggerService},
+    {
+      provide: LOGGER, useClass: DateLoggerService
+    },
+    {provide: MinimalLogger, useExisting: LOGGER},
+    {provide: RUNNERS_UP, useFactory: runnersUpFactory(2), deps: [Hero, HeroService]}
+
   ]
 })
 export class HeroOfTheMonthComponent {
   logs: string[] = [];
 
   constructor(
-      logger: MinimalLogger,
-      public heroOfTheMonth: Hero,
-      @Inject(RUNNERS_UP) public runnersUp: string,
-      @Inject(TITLE) public title: string)
-  {
+    logger: MinimalLogger,
+    public heroOfTheMonth: Hero,
+    @Inject(RUNNERS_UP) public runnersUp: string,
+    @Inject(TITLE) public title: string) {
     this.logs = logger.logs;
     logger.logInfo('starting up');
   }
