@@ -13,4 +13,5 @@
 - Configure - настроить
 - Configuring dependency providers - настройка поставщиков зависимостей
 - Resolution modifiers - модификаторы разрешения
+- logical tree - логическое дерево
 
