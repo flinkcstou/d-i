@@ -5,6 +5,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RootContentModule } from '../../../../libs/custom-d-i/src/lib/issues/root-content/root-content.module';
 import { TodoSelectModule } from '@d-i/custom-d-i';
+import { ProvidersViewprovidersModule } from '@d-i/providers-viewproviders';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -25,6 +26,7 @@ import { TodoSelectModule } from '@d-i/custom-d-i';
     // ComponentSelectorModule,
     RootContentModule,
     TodoSelectModule,
+    ProvidersViewprovidersModule,
     // DIInAngularModule,
     // ResolutionModifiersModule,
     // ProvidersViewprovidersModule,

@@ -5,9 +5,10 @@ import { ProvidersViewprovidersComponent } from './providers-viewproviders.compo
 import { ChildComponent } from './child/child.component';
 import { InspectorComponent } from './inspector/inspector.component';
 import { ChildInspectorComponent } from './child-inspector/child-inspector.component';
+import { InstertorDirectiveModule } from './inspertor.directive';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, InstertorDirectiveModule],
   exports: [ProvidersViewprovidersComponent],
   declarations: [
     ProvidersViewprovidersComponent,

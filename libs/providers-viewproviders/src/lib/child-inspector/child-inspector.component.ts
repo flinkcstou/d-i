@@ -1,6 +1,7 @@
 import { Component, Host, Optional } from '@angular/core';
 import { FlowerService } from '../services/flower.service';
 import { AnimalService } from '../services/animal.service';
+import { InspertorDirective } from '../inspertor.directive';
 
 @Component({
   selector: 'd-i-child-inspector',
@@ -14,7 +15,11 @@ export class ChildInspectorComponent {
     public animal: AnimalService,
     @Optional() @Host() public flowerHost: FlowerService,
     @Optional() @Host() public animalhost: AnimalService,
+    private inspertor:InspertorDirective,
   ) {
+    // console.error(inspertor.animalhost === animalhost)
+    // console.error(inspertor.flowerHost === flowerHost)
+
 
   }
 
