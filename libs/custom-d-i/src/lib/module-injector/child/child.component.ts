@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Child2Service } from '../child-2/child-2.service';
+import {Component} from '@angular/core';
+import {Child2Service} from '../child-2/child-2.service';
 
 @Component({
   selector: 'd-i-child',

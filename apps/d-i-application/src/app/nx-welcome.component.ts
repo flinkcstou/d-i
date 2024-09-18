@@ -1,7 +1,7 @@
-import { Component, ViewEncapsulation } from "@angular/core";
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: "d-i-nx-welcome",
+  selector: 'd-i-nx-welcome',
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -850,4 +850,5 @@ nx affected:e2e</pre>
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
-export class NxWelcomeComponent {}
+export class NxWelcomeComponent {
+}

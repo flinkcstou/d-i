@@ -1,5 +1,5 @@
-import { Component, forwardRef, Inject } from '@angular/core';
-import { DIRECTIVE, FIRST } from '../injection-token';
+import {Component, forwardRef, Inject} from '@angular/core';
+import {DIRECTIVE, FIRST} from '../injection-token';
 
 @Component({
   selector: 'd-i-forward-ref-first',
@@ -15,7 +15,7 @@ import { DIRECTIVE, FIRST } from '../injection-token';
 export class ForwardRefFirstComponent {
 
   constructor(
-    // @Inject(DIRECTIVE) private directive: any
+      // @Inject(DIRECTIVE) private directive: any
   ) {
     // console.error(directive);
   }

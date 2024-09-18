@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Child2Service } from './child-2.service';
-import { Child2Component } from './child-2.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Child2Service} from './child-2.service';
+import {Child2Component} from './child-2.component';
 
 @NgModule({
   declarations: [Child2Component],

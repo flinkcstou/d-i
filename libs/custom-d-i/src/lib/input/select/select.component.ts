@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { SelectConfigService, setSelectConfigService } from '../services/select-config.service';
+import {Component, Input} from '@angular/core';
+import {SelectConfigService, setSelectConfigService} from '../services/select-config.service';
 
 @Component({
   selector: 'd-i-select',
@@ -19,9 +19,9 @@ export class SelectComponent {
   @Input() placement: SelectConfigService['placement'];
 
   constructor(
-    // @Optional() private selectConfigd: SelectConfigDirective,
-    private selectConfigService: SelectConfigService,
-    // private selectConfigDirective: SelectConfigDirective,
+      // @Optional() private selectConfigd: SelectConfigDirective,
+      private selectConfigService: SelectConfigService,
+      // private selectConfigDirective: SelectConfigDirective,
   ) {
     // console.error(selectConfigd);
     console.error('SelectComponent from: ', this.selectConfigService.from);

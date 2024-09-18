@@ -6,10 +6,10 @@
  * found in the LICENSE file at https://angular.io/license
  */
 
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MAT_SORT_HEADER_INTL_PROVIDER } from './mat-sort-header-intl';
-import { MatSortDirective } from './mat-sort.directive';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {MAT_SORT_HEADER_INTL_PROVIDER} from './mat-sort-header-intl';
+import {MatSortDirective} from './mat-sort.directive';
 
 @NgModule({
   imports: [CommonModule,],

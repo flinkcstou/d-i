@@ -1,7 +1,7 @@
-import { Component, Host, Optional } from '@angular/core';
+import {Component, Host, Optional} from '@angular/core';
 
-import { HeroCacheService } from './services/hero-cache.service';
-import { LoggerService } from './logger.service';
+import {HeroCacheService} from './services/hero-cache.service';
+import {LoggerService} from './logger.service';
 
 @Component({
   selector: 'app-hero-contact',
@@ -16,7 +16,6 @@ export class HeroContactComponent {
   constructor(
       @Host() // limit to the host component's instance of the HeroCacheService
       private heroCache: HeroCacheService,
-
       @Host()     // limit search for logger; hides the application-wide logger
       @Optional() // ok if the logger doesn't exist
       private loggerService?: LoggerService
@@ -27,6 +26,8 @@ export class HeroContactComponent {
     }
   }
 
-  get phoneNumber() { return this.heroCache.hero.phone; }
+  get phoneNumber() {
+    return this.heroCache.hero.phone;
+  }
 
 }

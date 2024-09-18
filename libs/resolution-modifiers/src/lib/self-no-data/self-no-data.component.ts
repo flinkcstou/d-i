@@ -1,6 +1,6 @@
-import { Component, Self, Optional } from '@angular/core';
-import { LeafService } from '../services/leaf.service';
-import { FlowerService } from '../services/flower.service';
+import {Component, Self, Optional} from '@angular/core';
+import {LeafService} from '../services/leaf.service';
+import {FlowerService} from '../services/flower.service';
 
 @Component({
   selector: 'app-self-no-data',
@@ -9,9 +9,10 @@ import { FlowerService } from '../services/flower.service';
 })
 export class SelfNoDataComponent {
   constructor(
-    public flower: FlowerService,
-    @Self() @Optional() public leaf?: LeafService
-  ) { }
+      public flower: FlowerService,
+      @Self() @Optional() public leaf?: LeafService
+  ) {
+  }
 }
 
 

@@ -1,25 +1,29 @@
-import { Component, forwardRef, Optional, SkipSelf } from '@angular/core';
+import {Component, forwardRef, Optional, SkipSelf} from '@angular/core';
 
 // A component base class (see AlexComponent)
-export abstract class Base { name = 'Count Basie'; }
+export abstract class Base {
+  name = 'Count Basie';
+}
 
 // Marker class, used as an interface
-export abstract class Parent { abstract name: string; }
+export abstract class Parent {
+  abstract name: string;
+}
 
 const DifferentParent = Parent;
 
 // Helper method to provide the current component instance in the name of a `parentType`.
 // The `parentType` defaults to `Parent` when omitting the second parameter.
 export function provideParent
-  (component: any, parentType?: any) {
-    return { provide: parentType || Parent, useExisting: forwardRef(() => component) };
-  }
+(component: any, parentType?: any) {
+  return {provide: parentType || Parent, useExisting: forwardRef(() => component)};
+}
 
 // Simpler syntax version that always provides the component in the name of `Parent`.
 export function provideTheParent
-  (component: any) {
-    return { provide: Parent, useExisting: forwardRef(() => component) };
-  }
+(component: any) {
+  return {provide: Parent, useExisting: forwardRef(() => component)};
+}
 
 ///////// C - Child //////////
 const templateC = `
@@ -34,7 +38,9 @@ const templateC = `
 })
 export class CarolComponent {
   name = 'Carol';
-  constructor( @Optional() public parent?: Parent ) { }
+
+  constructor(@Optional() public parent?: Parent) {
+  }
 }
 
 @Component({
@@ -43,7 +49,9 @@ export class CarolComponent {
 })
 export class ChrisComponent {
   name = 'Chris';
-  constructor( @Optional() public parent?: Parent ) { }
+
+  constructor(@Optional() public parent?: Parent) {
+  }
 }
 
 //////  Craig ///////////
@@ -59,7 +67,8 @@ export class ChrisComponent {
   </div>`
 })
 export class CraigComponent {
-  constructor( @Optional() public alex?: Base ) { }
+  constructor(@Optional() public alex?: Base) {
+  }
 }
 
 //////// B - Parent /////////
@@ -74,33 +83,39 @@ const templateB = `
   </div>`;
 
 @Component({
-  selector:   'barry',
-  template:   templateB,
-  providers:  [{ provide: Parent, useExisting: forwardRef(() => BarryComponent) }]
+  selector: 'barry',
+  template: templateB,
+  providers: [{provide: Parent, useExisting: forwardRef(() => BarryComponent)}]
 })
 export class BarryComponent implements Parent {
   name = 'Barry';
-  constructor( @SkipSelf() @Optional() public parent?: Parent ) { }
+
+  constructor(@SkipSelf() @Optional() public parent?: Parent) {
+  }
 }
 
 @Component({
-  selector:   'bob',
-  template:   templateB,
-  providers:  [ provideParent(BobComponent) ]
+  selector: 'bob',
+  template: templateB,
+  providers: [provideParent(BobComponent)]
 })
 export class BobComponent implements Parent {
   name = 'Bob';
-  constructor( @SkipSelf() @Optional() public parent?: Parent ) { }
+
+  constructor(@SkipSelf() @Optional() public parent?: Parent) {
+  }
 }
 
 @Component({
-  selector:   'beth',
-  template:   templateB,
-  providers:  [ provideParent(BethComponent, DifferentParent) ]
+  selector: 'beth',
+  template: templateB,
+  providers: [provideParent(BethComponent, DifferentParent)]
 })
 export class BethComponent implements Parent {
   name = 'Beth';
-  constructor( @SkipSelf() @Optional() public parent?: Parent ) { }
+
+  constructor(@SkipSelf() @Optional() public parent?: Parent) {
+  }
 }
 
 ///////// A - Grandparent //////
@@ -114,7 +129,7 @@ export class BethComponent implements Parent {
       <craig></craig>
       <carol></carol>
     </div>`,
-  providers: [{ provide: Parent, useExisting: forwardRef(() => AlexComponent) }],
+  providers: [{provide: Parent, useExisting: forwardRef(() => AlexComponent)}],
 })
 // TODO: Add `... implements Parent` to class signature
 export class AlexComponent extends Base
@@ -134,10 +149,9 @@ export class AlexComponent extends Base
       <bob></bob>
       <carol></carol>
     </div> `,
-  providers:  [ provideParent(AliceComponent) ]
+  providers: [provideParent(AliceComponent)]
 })
-export class AliceComponent implements Parent
-{
+export class AliceComponent implements Parent {
   name = 'Alice';
 }
 
@@ -154,7 +168,8 @@ export class AliceComponent implements Parent
   </div>`
 })
 export class CathyComponent {
-  constructor( @Optional() public alex?: AlexComponent ) { }
+  constructor(@Optional() public alex?: AlexComponent) {
+  }
 }
 
 ///////// ParentFinder //////
@@ -165,4 +180,5 @@ export class CathyComponent {
     <alex></alex>
     <alice></alice>`
 })
-export class ParentFinderComponent { }
+export class ParentFinderComponent {
+}

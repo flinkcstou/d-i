@@ -1,21 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 // import { DIInActionRoutingModule } from './app-routing.module';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
-import { HeroData } from './hero-data';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import {HeroData} from './hero-data';
+import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 
 
-import { DIInActionComponent } from './d-i-in-action.component';
-import { HeroBioComponent } from './hero-bio.component';
-import { HeroBiosAndContactsComponent, HeroBiosComponent } from './hero-bios.component';
-import { HeroOfTheMonthComponent } from './hero-of-the-month.component';
-import { HeroContactComponent } from './hero-contact.component';
-import { HeroesBaseComponent, SortedHeroesComponent } from './sorted-heroes.component';
-import { HighlightDirective } from './highlight.directive';
+import {DIInActionComponent} from './d-i-in-action.component';
+import {HeroBioComponent} from './hero-bio.component';
+import {HeroBiosAndContactsComponent, HeroBiosComponent} from './hero-bios.component';
+import {HeroOfTheMonthComponent} from './hero-of-the-month.component';
+import {HeroContactComponent} from './hero-contact.component';
+import {HeroesBaseComponent, SortedHeroesComponent} from './sorted-heroes.component';
+import {HighlightDirective} from './highlight.directive';
 import {
   AlexComponent,
   AliceComponent,
@@ -28,8 +28,8 @@ import {
   CraigComponent,
   ParentFinderComponent
 } from './parent-finder.component';
-import { StorageComponent } from './storage.component';
-import { NgModule } from '@angular/core';
+import {StorageComponent} from './storage.component';
+import {NgModule} from '@angular/core';
 
 const declarations = [
   DIInActionComponent,

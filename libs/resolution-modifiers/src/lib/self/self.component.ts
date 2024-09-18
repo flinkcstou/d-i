@@ -1,6 +1,6 @@
-import { Component, Self } from '@angular/core';
-import { FlowerService } from '../services/flower.service';
-import { LeafService } from '../services/leaf.service';
+import {Component, Self} from '@angular/core';
+import {FlowerService} from '../services/flower.service';
+import {LeafService} from '../services/leaf.service';
 
 @Component({
   selector: 'app-self',

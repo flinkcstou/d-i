@@ -1,4 +1,4 @@
-import { Engine, Tires, Car } from './car';
+import {Engine, Tires, Car} from './car';
 
 // BAD pattern!
 export class CarFactory {

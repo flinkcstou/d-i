@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
-import { FlowerService } from './services/flower.service';
-import { AnimalService } from './services/animal.service';
+import {Component} from '@angular/core';
+import {FlowerService} from './services/flower.service';
+import {AnimalService} from './services/animal.service';
 
 
 @Component({
   selector: 'providers-viewproviders',
   templateUrl: './providers-viewproviders.component.html',
-  styleUrls: [ './providers-viewproviders.component.css' ]
+  styleUrls: ['./providers-viewproviders.component.css']
 })
 export class ProvidersViewprovidersComponent {
-  constructor(public flower: FlowerService, public animal: AnimalService) {}
+  constructor(public flower: FlowerService, public animal: AnimalService) {
+  }
 }
 
 // When using @Host() together with @SkipSelf() in

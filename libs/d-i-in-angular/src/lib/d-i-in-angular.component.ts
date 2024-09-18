@@ -1,7 +1,7 @@
-import { Component, Inject } from '@angular/core';
+import {Component, Inject} from '@angular/core';
 
-import { APP_CONFIG, DIInAngularConfig } from './d-i-in-angular.config';
-import { UserService } from './services/user.service';
+import {APP_CONFIG, DIInAngularConfig} from './d-i-in-angular.config';
+import {UserService} from './services/user.service';
 
 @Component({
   selector: 'd-i-in-angular',
@@ -25,8 +25,8 @@ export class DIInAngularComponent {
   title: string;
 
   constructor(
-    @Inject(APP_CONFIG) config: DIInAngularConfig,
-    private userService: UserService) {
+      @Inject(APP_CONFIG) config: DIInAngularConfig,
+      private userService: UserService) {
     this.title = config.title;
   }
 
@@ -44,6 +44,6 @@ export class DIInAngularComponent {
 
   get userInfo() {
     return `Current user, ${this.user.name}, is ` +
-      `${this.isAuthorized ? '' : 'not'} authorized. `;
+        `${this.isAuthorized ? '' : 'not'} authorized. `;
   }
 }

@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { HeroService } from './services/hero.service';
-import { LoggerService } from './logger.service';
+import {HeroService} from './services/hero.service';
+import {LoggerService} from './logger.service';
 
 //////// HeroBiosComponent ////
 @Component({

@@ -1,5 +1,5 @@
-import { Component, Optional } from '@angular/core';
-import { OptionalService } from '../services/optional.service';
+import {Component, Optional} from '@angular/core';
+import {OptionalService} from '../services/optional.service';
 
 @Component({
   selector: 'app-optional',
@@ -9,7 +9,7 @@ import { OptionalService } from '../services/optional.service';
 
 export class OptionalComponent {
   constructor(@Optional() public optional?: OptionalService) {
-    console.error(optional)
+    console.error(optional);
 
   }
 }

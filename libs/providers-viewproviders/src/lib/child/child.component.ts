@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { FlowerService } from '../services/flower.service';
-import { AnimalService } from '../services/animal.service';
+import {Component} from '@angular/core';
+import {FlowerService} from '../services/flower.service';
+import {AnimalService} from '../services/animal.service';
 
 @Component({
   selector: 'app-child',

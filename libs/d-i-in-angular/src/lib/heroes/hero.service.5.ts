@@ -1,9 +1,11 @@
-import { EnvironmentInjector, inject, Injectable, runInInjectionContext } from '@angular/core';
+import {EnvironmentInjector, inject, Injectable, runInInjectionContext} from '@angular/core';
 
-@Injectable({providedIn:
-  'root'
+@Injectable({
+  providedIn:
+      'root'
 })
-export class SomeService {}
+export class SomeService {
+}
 
 @Injectable({
   providedIn: 'root',

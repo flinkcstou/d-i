@@ -1,4 +1,4 @@
-import { Directive, EventEmitter, Injector, Output } from '@angular/core';
+import {Directive, EventEmitter, Injector, Output} from '@angular/core';
 
 @Directive({
   selector: '[bookLoaderParent]',

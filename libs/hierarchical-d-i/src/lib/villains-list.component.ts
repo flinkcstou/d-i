@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
 
-import { Villain, VillainsService } from './services/villains.service';
+import {Villain, VillainsService} from './services/villains.service';
 
 @Component({
   selector: 'app-villains-list',
   templateUrl: './villains-list.component.html',
-  providers: [ VillainsService ]
+  providers: [VillainsService]
 })
 export class VillainsListComponent {
   villains: Observable<Villain[]>;

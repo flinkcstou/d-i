@@ -3,7 +3,9 @@ import { Injectable } from '@angular/core';
 /// Model ///
 export class Car {
   name = 'Avocado Motors';
-  constructor(public engine: Engine, public tires: Tires) { }
+
+  constructor(public engine: Engine, public tires: Tires) {
+  }
 
   get description() {
     return `${this.name} car with ` +
@@ -16,7 +18,7 @@ export class Engine {
 }
 
 export class Tires {
-  make  = 'Flintstone';
+  make = 'Flintstone';
   model = 'Square';
 }
 
@@ -26,7 +28,10 @@ export class Tires {
 })
 export class EngineService {
   id = 'E1';
-  getEngine() { return new Engine(); }
+
+  getEngine() {
+    return new Engine();
+  }
 }
 
 @Injectable({
@@ -34,6 +39,7 @@ export class EngineService {
 })
 export class EngineService2 {
   id = 'E2';
+
   getEngine() {
     const eng = new Engine();
     eng.cylinders = 8;
@@ -47,7 +53,10 @@ export class EngineService2 {
 })
 export class TiresService {
   id = 'T1';
-  getTires() { return new Tires(); }
+
+  getTires() {
+    return new Tires();
+  }
 }
 
 /// Car Services ///
@@ -59,7 +68,8 @@ export class CarService {
 
   constructor(
     protected engineService: EngineService,
-    protected tiresService: TiresService) { }
+    protected tiresService: TiresService) {
+  }
 
   getCar() {
     return new Car(

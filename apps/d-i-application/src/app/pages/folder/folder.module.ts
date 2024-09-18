@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FolderComponent } from './folder.component';
-import { FolderRoutingModule } from './folder-routing.module';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FolderComponent} from './folder.component';
+import {FolderRoutingModule} from './folder-routing.module';
 
 
 @NgModule({

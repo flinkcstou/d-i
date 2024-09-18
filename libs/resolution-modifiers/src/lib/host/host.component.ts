@@ -1,5 +1,5 @@
-import { Component, Host, Optional, SkipSelf } from '@angular/core';
-import { FlowerService } from '../services/flower.service';
+import {Component, Host, Optional, SkipSelf} from '@angular/core';
+import {FlowerService} from '../services/flower.service';
 
 @Component({
   selector: 'app-host',
@@ -11,9 +11,9 @@ import { FlowerService } from '../services/flower.service';
 export class HostComponent {
   // use @Host() in the constructor when injecting the service
   constructor(
-    @Optional() @Host() public flower?: FlowerService,
-    @Optional() @SkipSelf() public flowerskip?: FlowerService,
-    @Optional() @Host() @SkipSelf()  public flowerskipHost?: FlowerService,
+      @Optional() @Host() public flower?: FlowerService,
+      @Optional() @SkipSelf() public flowerskip?: FlowerService,
+      @Optional() @Host() @SkipSelf() public flowerskipHost?: FlowerService,
   ) {
   }
 

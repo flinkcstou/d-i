@@ -1,6 +1,6 @@
-import { Component, Host, Optional } from '@angular/core';
-import { FlowerService } from '../services/flower.service';
-import { AnimalService } from '../services/animal.service';
+import {Component, Host, Optional} from '@angular/core';
+import {FlowerService} from '../services/flower.service';
+import {AnimalService} from '../services/animal.service';
 
 @Component({
   selector: 'app-inspector',
@@ -15,10 +15,10 @@ import { AnimalService } from '../services/animal.service';
 })
 export class InspectorComponent {
   constructor(
-    public flower: FlowerService,
-    public animal: AnimalService,
-    @Optional() @Host() public flowerHost: FlowerService,
-    @Optional() @Host() public animalhost: AnimalService,
+      public flower: FlowerService,
+      public animal: AnimalService,
+      @Optional() @Host() public flowerHost: FlowerService,
+      @Optional() @Host() public animalhost: AnimalService,
   ) {
 
   }

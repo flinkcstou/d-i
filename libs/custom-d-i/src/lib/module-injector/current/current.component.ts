@@ -1,5 +1,5 @@
-import { Component, Inject } from '@angular/core';
-import { A_SERVICE } from '../custom-d-i/injection-token';
+import {Component, Inject} from '@angular/core';
+import {A_SERVICE} from '../custom-d-i/injection-token';
 
 @Component({
   selector: 'd-i-current',
@@ -9,7 +9,7 @@ import { A_SERVICE } from '../custom-d-i/injection-token';
 export class CurrentComponent {
 
   constructor(@Inject(A_SERVICE) a: string) {
-    console.error(a)
+    console.error(a);
   }
 
 }

@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 export class User {
   constructor(
-    public name: string,
-    public isAuthorized = false) { }
+      public name: string,
+      public isAuthorized = false) {
+  }
 }
 
 // TODO: get the user; don't 'new' it.

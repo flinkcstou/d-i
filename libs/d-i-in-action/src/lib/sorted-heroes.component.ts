@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { Hero } from './hero';
-import { HeroService } from './services/hero.service';
+import {Hero} from './hero';
+import {HeroService} from './services/hero.service';
 
 /////// HeroesBaseComponent /////
 @Component({
@@ -10,7 +10,8 @@ import { HeroService } from './services/hero.service';
   providers: [HeroService]
 })
 export class HeroesBaseComponent implements OnInit {
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService) {
+  }
 
   heroes: Hero[] = [];
 
@@ -20,7 +21,8 @@ export class HeroesBaseComponent implements OnInit {
   }
 
   // Post-process heroes in derived class override.
-  protected afterGetHeroes() {}
+  protected afterGetHeroes() {
+  }
 
 }
 
@@ -37,6 +39,6 @@ export class SortedHeroesComponent extends HeroesBaseComponent {
 
   protected override afterGetHeroes() {
     this.heroes = this.heroes.sort((h1, h2) => h1.name < h2.name ? -1 :
-            (h1.name > h2.name ? 1 : 0));
+        (h1.name > h2.name ? 1 : 0));
   }
 }

@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { AbstractFactoryPatternService, FactoryPatternMenuEnum } from './abstract-factory-pattern.service';
+import {Component} from '@angular/core';
+import {
+  AbstractFactoryPatternService,
+  FactoryPatternMenuEnum
+} from './abstract-factory-pattern.service';
 
 @Component({
   selector: 'd-i-abstract-factory-pattern',

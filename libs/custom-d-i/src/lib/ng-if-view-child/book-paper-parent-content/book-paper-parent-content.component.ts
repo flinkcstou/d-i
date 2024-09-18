@@ -9,9 +9,9 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
-import { BookPaperGrandComponent } from '../book-paper-grand/book-paper-grand.component';
-import { AbstractBookComponent } from '../services/abstract-book.component';
-import { BookLoaderParentDirective } from '../services/book-loader-parent.directive';
+import {BookPaperGrandComponent} from '../book-paper-grand/book-paper-grand.component';
+import {AbstractBookComponent} from '../services/abstract-book.component';
+import {BookLoaderParentDirective} from '../services/book-loader-parent.directive';
 
 @Component({
   selector: 'd-i-book-paper-parent-content',

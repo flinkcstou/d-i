@@ -22,6 +22,7 @@
       "@d-i/providers-viewproviders": [
         "libs/providers-viewproviders/src/index.ts"
       ],
+      "@d-i/ref": ["libs/ref/src/index.ts"],
       "@d-i/resolution-modifiers": ["libs/resolution-modifiers/src/index.ts"]
     },
     "strictNullChecks": false,

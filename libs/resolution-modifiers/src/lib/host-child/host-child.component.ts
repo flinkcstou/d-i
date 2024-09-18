@@ -1,5 +1,5 @@
-import { Component, Host, Optional } from '@angular/core';
-import { FlowerService } from '../services/flower.service';
+import {Component, Host, Optional} from '@angular/core';
+import {FlowerService} from '../services/flower.service';
 
 @Component({
   selector: 'app-host-child',
@@ -8,8 +8,8 @@ import { FlowerService } from '../services/flower.service';
 })
 export class HostChildComponent {
   constructor(
-    @Optional() public flower: FlowerService,
-    @Optional() @Host() public flowerHost: FlowerService
+      @Optional() public flower: FlowerService,
+      @Optional() @Host() public flowerHost: FlowerService
   ) {
   }
 }

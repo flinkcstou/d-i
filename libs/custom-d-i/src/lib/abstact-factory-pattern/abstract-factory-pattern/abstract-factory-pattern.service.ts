@@ -1,6 +1,6 @@
-import { Injectable, Injector, Type } from '@angular/core';
-import { PastaService } from './pasta.service';
-import { PizzaService } from './pizza.service';
+import {Injectable, Injector, Type} from '@angular/core';
+import {PastaService} from './pasta.service';
+import {PizzaService} from './pizza.service';
 
 
 export enum FactoryPatternMenuEnum {

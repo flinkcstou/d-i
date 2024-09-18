@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { AppComponent } from '../../app.component';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AppComponent} from '../../app.component';
 
 @Component({
   selector: 'mybpm-bo-instance-form-folder',

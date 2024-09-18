@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import {Component} from '@angular/core';
+import {Hero} from './hero';
+import {HeroService} from './hero.service';
 
 @Component({
   selector: 'app-hero-list',
@@ -14,8 +14,7 @@ import { HeroService } from './hero.service';
 export class HeroListComponent {
   heroes: Hero[];
 
-  constructor(heroService: HeroService)
-  {
+  constructor(heroService: HeroService) {
     this.heroes = heroService.getHeroes();
   }
 }

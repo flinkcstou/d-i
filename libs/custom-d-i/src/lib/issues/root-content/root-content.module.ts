@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AComponent, BComponent, CComponent, RootContentComponent } from './root-content.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {AComponent, BComponent, CComponent, RootContentComponent} from './root-content.component';
 
 @NgModule({
   declarations: [RootContentComponent, AComponent, BComponent, CComponent],

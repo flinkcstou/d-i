@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { FolderMobileComponent } from './folder-mobile.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {FolderMobileComponent} from './folder-mobile.component';
 
 const routes: Routes = [
   {

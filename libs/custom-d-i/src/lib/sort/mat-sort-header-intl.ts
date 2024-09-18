@@ -1,5 +1,5 @@
-import { Injectable, Optional, SkipSelf } from '@angular/core';
-import { Subject } from 'rxjs';
+import {Injectable, Optional, SkipSelf} from '@angular/core';
+import {Subject} from 'rxjs';
 
 @Injectable({providedIn: 'root'})
 export class MatSortHeaderIntl {

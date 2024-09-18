@@ -1,14 +1,14 @@
-import { InjectionToken } from '@angular/core';
+import {InjectionToken} from '@angular/core';
 
 export const TITLE = new InjectionToken<string>('title');
 
-import { Component, Inject } from '@angular/core';
+import {Component, Inject} from '@angular/core';
 
-import { DateLoggerService } from './date-logger.service';
-import { Hero } from './hero';
-import { HeroService } from './services/hero.service';
-import { LoggerService } from './logger.service';
-import { MinimalLogger } from './services/minimal-logger.service';
+import {DateLoggerService} from './date-logger.service';
+import {Hero} from './hero';
+import {HeroService} from './services/hero.service';
+import {LoggerService} from './logger.service';
+import {MinimalLogger} from './services/minimal-logger.service';
 import {
   RUNNERS_UP,
   runnersUpFactory
@@ -38,10 +38,10 @@ export class HeroOfTheMonthComponent {
   logs: string[] = [];
 
   constructor(
-    logger: MinimalLogger,
-    public heroOfTheMonth: Hero,
-    @Inject(RUNNERS_UP) public runnersUp: string,
-    @Inject(TITLE) public title: string) {
+      logger: MinimalLogger,
+      public heroOfTheMonth: Hero,
+      @Inject(RUNNERS_UP) public runnersUp: string,
+      @Inject(TITLE) public title: string) {
     this.logs = logger.logs;
     logger.logInfo('starting up');
   }

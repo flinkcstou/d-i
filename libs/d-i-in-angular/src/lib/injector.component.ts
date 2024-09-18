@@ -1,10 +1,10 @@
-import { Component, Injector } from '@angular/core';
+import {Component, Injector} from '@angular/core';
 
-import { Car, Engine, Tires } from './car/car';
-import { Hero } from './heroes/hero';
-import { HeroService } from './heroes/hero.service';
-import { heroServiceProvider } from './heroes/hero.service.provider';
-import { Logger } from './services/logger.service';
+import {Car, Engine, Tires} from './car/car';
+import {Hero} from './heroes/hero';
+import {HeroService} from './heroes/hero.service';
+import {heroServiceProvider} from './heroes/hero.service.provider';
+import {Logger} from './services/logger.service';
 
 @Component({
   selector: 'app-injectors',
@@ -30,7 +30,7 @@ export class InjectorComponent {
   }
 
   get rodent() {
-    const rousDontExist = "R.O.U.S.'s? I don't think they exist!";
+    const rousDontExist = 'R.O.U.S.\'s? I don\'t think they exist!';
     return this.injector.get(ROUS, rousDontExist);
   }
 }
@@ -39,4 +39,5 @@ export class InjectorComponent {
  * R.O.U.S. - Rodents Of Unusual Size
  * // https://www.youtube.com/watch?v=BOv5ZjAOpC8
  */
-class ROUS { }
+class ROUS {
+}

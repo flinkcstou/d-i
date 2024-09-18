@@ -1,11 +1,11 @@
 // Simulate a simple test
 // Reader should look to the testing chapter for the real thing
 
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { Hero  } from './heroes/hero';
-import { HeroService } from './heroes/hero.service';
-import { HeroListComponent } from './heroes/hero-list.component';
+import {Hero} from './heroes/hero';
+import {HeroService} from './heroes/hero.service';
+import {HeroListComponent} from './heroes/hero-list.component';
 
 @Component({
   selector: 'app-tests',
@@ -22,7 +22,7 @@ export class TestComponent {
 function runTests() {
 
   const expectedHeroes = [{name: 'A'}, {name: 'B'}];
-  const mockService = {getHeroes: () => expectedHeroes } as HeroService;
+  const mockService = {getHeroes: () => expectedHeroes} as HeroService;
 
   it('should have heroes when HeroListComponent created', () => {
     // Pass the mock to the constructor as the Angular injector would
@@ -36,14 +36,14 @@ function runTests() {
 //////////////////////////////////
 // Fake Jasmine infrastructure
 let testName: string;
-let testResults: {pass: string, message: string};
+let testResults: { pass: string, message: string };
 
 function expect(actual: any) {
   return {
     toEqual: (expected: any) => {
       testResults = actual === expected ?
-        {pass: 'passed', message: testName} :
-        {pass: 'failed', message: `${testName}; expected ${actual} to equal ${expected}.`};
+          {pass: 'passed', message: testName} :
+          {pass: 'failed', message: `${testName}; expected ${actual} to equal ${expected}.`};
     }
   };
 }

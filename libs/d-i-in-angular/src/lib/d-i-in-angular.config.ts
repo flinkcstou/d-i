@@ -1,7 +1,8 @@
-import { DIInAngularConfig } from './d-i-in-angular-config';
-export { DIInAngularConfig } from './d-i-in-angular-config';
+import {DIInAngularConfig} from './d-i-in-angular-config';
 
-import { InjectionToken } from '@angular/core';
+export {DIInAngularConfig} from './d-i-in-angular-config';
+
+import {InjectionToken} from '@angular/core';
 
 export const APP_CONFIG = new InjectionToken<DIInAngularConfig>('app.config');
 

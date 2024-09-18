@@ -1,6 +1,6 @@
-import { Component, Injector, OnInit, Optional, ViewContainerRef } from '@angular/core';
-import { AbstractBookComponent } from '../services/abstract-book.component';
-import { BookPaperGrandComponent } from '../book-paper-grand/book-paper-grand.component';
+import {Component, Injector, OnInit, Optional, ViewContainerRef} from '@angular/core';
+import {AbstractBookComponent} from '../services/abstract-book.component';
+import {BookPaperGrandComponent} from '../book-paper-grand/book-paper-grand.component';
 
 @Component({
   selector: 'd-i-book-paper-parent',
@@ -19,7 +19,7 @@ export class BookPaperParentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   loaded(event: { component: AbstractBookComponent }) {
     console.error('loaded:', event);
 

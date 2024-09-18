@@ -1,5 +1,5 @@
-import { Directive } from '@angular/core';
-import { MatSortHeaderIntl } from './mat-sort-header-intl';
+import {Directive} from '@angular/core';
+import {MatSortHeaderIntl} from './mat-sort-header-intl';
 
 @Directive({
   selector: '[matMatSort]',

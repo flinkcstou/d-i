@@ -1,5 +1,5 @@
-import { Directive, NgModule } from '@angular/core';
-import { SelectConfigService, setSelectConfigService } from './select-config.service';
+import {Directive, NgModule} from '@angular/core';
+import {SelectConfigService, setSelectConfigService} from './select-config.service';
 
 @Directive({
   selector: '[selectConfigSecond]',
@@ -15,7 +15,7 @@ import { SelectConfigService, setSelectConfigService } from './select-config.ser
 export class SelectConfigSecondDirective {
 
   constructor(
-    // @Optional() private selectComponent: SelectComponent
+      // @Optional() private selectComponent: SelectComponent
   ) {
   }
 

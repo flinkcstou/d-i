@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
-import { LoggerService } from './logger.service';
-import { UserContextService } from './services/user-context.service';
+import {LoggerService} from './logger.service';
+import {UserContextService} from './services/user-context.service';
 
 @Component({
   selector: 'd-i-in-action',

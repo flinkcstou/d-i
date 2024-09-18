@@ -1,6 +1,6 @@
-import { Component, forwardRef, OnInit, Optional } from '@angular/core';
-import { AbstractBookComponent } from '../services/abstract-book.component';
-import { BookPaperGrandComponent } from '../book-paper-grand/book-paper-grand.component';
+import {Component, forwardRef, OnInit, Optional} from '@angular/core';
+import {AbstractBookComponent} from '../services/abstract-book.component';
+import {BookPaperGrandComponent} from '../book-paper-grand/book-paper-grand.component';
 
 @Component({
   selector: 'd-i-book-paper-back',

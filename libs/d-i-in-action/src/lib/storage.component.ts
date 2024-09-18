@@ -1,5 +1,5 @@
-import { Component, OnInit, Self, SkipSelf } from '@angular/core';
-import { BROWSER_STORAGE, BrowserStorageService } from './services/storage.service';
+import {Component, OnInit, Self, SkipSelf} from '@angular/core';
+import {BROWSER_STORAGE, BrowserStorageService} from './services/storage.service';
 
 @Component({
   selector: 'app-storage',
@@ -13,16 +13,17 @@ import { BROWSER_STORAGE, BrowserStorageService } from './services/storage.servi
     <button type="button" (click)="setLocal()">Set Local Storage</button>
   `,
   providers: [
-    { provide: BROWSER_STORAGE, useFactory: () => sessionStorage },
+    {provide: BROWSER_STORAGE, useFactory: () => sessionStorage},
     BrowserStorageService,
   ]
 })
 export class StorageComponent {
 
   constructor(
-    @Self() private sessionStorageService: BrowserStorageService,
-    @SkipSelf() private localStorageService: BrowserStorageService,
-  ) { }
+      @Self() private sessionStorageService: BrowserStorageService,
+      @SkipSelf() private localStorageService: BrowserStorageService,
+  ) {
+  }
 
   setSession() {
     this.sessionStorageService.set('hero', 'Dr Nice - Session');
