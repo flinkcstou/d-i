@@ -5,4 +5,5 @@
 - изучить как работает ConditionalBeanMissing
 - Conditional, ConditionalOnClass, CondtionalOnBean,
 - JpaRepositoryAutoConfiguration
+- что такое SimpleJPaRepository, Repository, CrudRepository
 - как подхватывается автоконфигурация
